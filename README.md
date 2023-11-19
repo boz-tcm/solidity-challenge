@@ -5,10 +5,10 @@
 ## `Project: Module 20 Solidity-Challenge`
 
 ## Background
-> We work at a startup that’s building a new and disruptive application named KryptoJobs2Go.
+> We have recently been hired by a fintech startup company that is disrupting the finance industry with its own cross-border, Ethereum-compatible blockchain connecting financial institutions.
 
 ## Purpose
-> Our customers will be able to use KryptoJobs2Go to find fintech professionals from a list of candidates, hire them, and then pay them. As the lead developer, we have been tasked with integrating the Ethereum blockchain network within the application. The purpose is to enable our customers to instantly pay their hired fintech professionals with Ether cryptocurrency.  Our prototype will be developed using Streamlit as the front-end UI, and Ganache as our local network back-end, for purposes of testing within an emulated Ethereum blockchain network.
+> The team currently is building smart contracts to automate many of the institutions’ financial processes and features, such as hosting joint savings accounts. To automate the creation of joint savings accounts, we'll create a Solidity smart contract that accepts two user addresses. These addresses will be able to control a joint savings account. Our smart contract will use ether management functions to implement a financial institution’s requirements for providing the features of the joint savings account. These features will consist of the ability to deposit and withdraw funds from the account.
 
 ## Table of Contents
 * [Background](#background)
@@ -25,9 +25,10 @@
 
 ## Technologies Used
 - Python Version 3.10.13
-- Streamlit Version 1.27.2
+- Remix IDE 0.37.3 via Chrome Web Browser
+- Pragma Solidity >= 0.5.5 (requires compiler 0.5.5 or greater, and less than 0.6.0)
 - VS Code IDE 1.84.2
-- Firefox 119.0
+- Chrome 119.0.6045.123 (Official Build) (arm64)
 - Markdown
 
 ## Screenshots
