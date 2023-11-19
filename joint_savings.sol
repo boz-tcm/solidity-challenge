@@ -89,4 +89,13 @@ contract JointSavings {
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
     fallback() external payable {} //Receiving ether when no contract function matched the function called
+    //The fallback function always receives data, but in order to also receive Ether it must be marked payable
+    /* Note: As of Solidity 0.6.x, the fallback function now has a different syntax that is declared using fallback() external
+    [payable] {…} (without the function keyword).
+    "In versions of Solidity before 0.6.x, developers typically used the fallback function to handle logic in two scenarios:
+    - A contract received ether and no data.
+    - A contract received data, but no function matched the function called."
+    c.f. https://betterprogramming.pub/solidity-0-6-x-features-fallback-and-receive-functions-69895e3ffe */
+    // Appears new receive() function is only defined for Solidity ^0.6.x, while fallback() predates and remains in effect, but with
+    // modified functionality to reflect bifurcation of functionality to receive().
 }
