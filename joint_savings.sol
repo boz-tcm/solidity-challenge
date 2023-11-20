@@ -55,8 +55,9 @@ contract JointSavings {
         /*
         Add an `if` statement to check if the `lastToWithdraw` is not equal to (`!=`) to `recipient` If `lastToWithdraw` is not equal, then set it to the current value of `recipient`.
         */
-        if lastToWithdraw != recipient:
+        if (lastToWithdraw != recipient) { //Wrapping if statement condition in parentheses is structure for C and Java, but not Python
             lastToWithdraw = recipient;
+        }
 
         // Call the `transfer` function of the `recipient` and pass it the `amount` to transfer as an argument.
         recipient.transfer(amount);
@@ -88,14 +89,15 @@ contract JointSavings {
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    fallback() external payable {} //Receiving ether when no contract function matched the function called
-    //The fallback function always receives data, but in order to also receive Ether it must be marked payable
-    /* Note: As of Solidity 0.6.x, the fallback function now has a different syntax that is declared using fallback() external
-    [payable] {…} (without the function keyword).
+    function fallback() external payable {} //Receiving ether when no contract function matches the function called
+    //The fallback function always receives data, but in order to also receive Ether it must be marked payable.  We are using Solidity
+    //compiler ^0.5.0. Commments below refer to Solidity since 0.6.x and don't apply here, but worth noting standards for future reference.
+    /* Note: As of Solidity 0.6.x, "the fallback function now has a different syntax that is declared using fallback() external
+    [payable] {…} (without the function keyword)."
     "In versions of Solidity before 0.6.x, developers typically used the fallback function to handle logic in two scenarios:
     - A contract received ether and no data.
     - A contract received data, but no function matched the function called."
     c.f. https://betterprogramming.pub/solidity-0-6-x-features-fallback-and-receive-functions-69895e3ffe */
     // Appears new receive() function is only defined for Solidity ^0.6.x, while fallback() predates and remains in effect, but with
-    // modified functionality to reflect bifurcation of functionality to receive().
+    // modified functionality to reflect bifurcation of functionality to include receive().
 }
