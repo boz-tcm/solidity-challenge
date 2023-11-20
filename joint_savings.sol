@@ -6,7 +6,7 @@ To automate the creation of joint savings accounts, you will create a solidity s
 then able to control a joint savings account. Your smart contract will use ether management functions to implement various requirements
 from the financial institution to provide the features of the joint savings account.
 
-The Starting file provided for this challenge contains a `pragma` for solidity version `5.0.0`.
+The Starting file provided for this challenge contains a `pragma` for solidity version `0.5.0`.
 You will do the following:
 
 1. Create and work within a local blockchain development environment using the JavaScript VM provided by the Remix IDE.
@@ -41,7 +41,7 @@ contract JointSavings {
     - A `uint` variable named `amount`
     - A `payable address` named `recipient`
     */
-    function withdraw(uint amount, address payable recipient) public { //address payable object variable can act as both payor and payee
+    function withdraw(uint amount, address payable recipient) public {
         /*
         Define a `require` statement that checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `require` statement returns the text `"You don't own this account!"` if it does not.
         */
@@ -89,15 +89,15 @@ contract JointSavings {
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    function fallback() external payable {} //Receiving ether when no contract function matches the function called
+    function () external payable {} //Receiving ether when no contract function matches the function called.  Must declare fallback as an UNNAMED function.
     //The fallback function always receives data, but in order to also receive Ether it must be marked payable.  We are using Solidity
-    //compiler ^0.5.0. Commments below refer to Solidity since 0.6.x and don't apply here, but worth noting standards for future reference.
+    //compiler ^0.5.0. Commments below refer to Solidity ^0.6.x and don't apply here, but worth noting new standards for future reference.
     /* Note: As of Solidity 0.6.x, "the fallback function now has a different syntax that is declared using fallback() external
     [payable] {…} (without the function keyword)."
     "In versions of Solidity before 0.6.x, developers typically used the fallback function to handle logic in two scenarios:
     - A contract received ether and no data.
     - A contract received data, but no function matched the function called."
     c.f. https://betterprogramming.pub/solidity-0-6-x-features-fallback-and-receive-functions-69895e3ffe */
-    // Appears new receive() function is only defined for Solidity ^0.6.x, while fallback() predates and remains in effect, but with
-    // modified functionality to reflect bifurcation of functionality to include receive().
+    // Appears new receive() function is only defined for Solidity ^0.6.x, while fallback predates and remains in effect, but with
+    // modified functionality reflecting bifurcation of functionality to incorporate receive().
 }

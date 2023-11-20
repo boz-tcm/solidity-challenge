@@ -24,58 +24,61 @@
 <!-- * [License](#license) -->
 
 ## Technologies Used
-- Python Version 3.10.13
 - Remix IDE 0.37.3 via Chrome Web Browser
-- Pragma Solidity >= 0.5.5 (requires compiler 0.5.5 or greater, and less than 0.6.0)
+- Google Chrome 119.0.6045.123 (Official Build) (arm64)
+- Pragma Solidity ^0.5.0 Code File (requires compiler 0.5.0 or greater and less than 0.6.0)
+- Solidity Code File Compiled Using Version 0.5.5+commit.47a71e8f
 - VS Code IDE 1.84.2
-- Chrome 119.0.6045.123 (Official Build) (arm64)
 - Markdown
 
 ## Screenshots
 
-### `Screenshots below depict Streamlit and Ganache application and transaction audit trails for sending Ether to selected Fintech independent contractor, Kendall, at the hourly rate of 0.16 ether, for two hours of contracted work:`
+### `Screenshots below depict Remix compilation and deployment validation for our Solidity smart contract 'joint_savings.sol':`
 
-#### `1. Customer's Accounts Tab in Ganache Prior to Sending Transaction to Fintech Independent Contractor:`
-![A screenshot depicts customer's ganache accounts tab prior to sending transaction.](Resources/Images/1.%20Ganache%20Prior%20to%20Sending%20Transaction.png)
+#### `1. Smart contract compilation and deployment validation:`
+![A screenshot depicts contract compilation and deployment validation.](Resources/Images/Execution_Results/1.%20deploy_Contract%20Deployment.png)
 
-#### `2. Customer's Streamlit App Page Following Execution and Blockchain Validation of Sending Transaction to Fintech Independent Contractor, includes validation and transaction hash, along with Customer's Ethereum address (base address, or index 0) and selected independent contractor's Ethereum address:`
-![A screenshot depicts customer's streamlit following validated transaction send.](Resources/Images/2.%20Streamlit%20After%20Successfully%20Sending%20Transaction.png)
+#### `2. setAccounts Function Deployment Validation. (Two dummy accounts were created through` https://vanity-eth.tk`):`
+![A screenshot depicts setaccounts function deployment validation.](Resources/Images/Execution_Results/2.%20setAccounts_Contract%20Joint%20Savings%20Accounts.png)
 
-#### `3. Customer's Accounts Tab in Ganache After Sending Transaction to Fintech Independent Contractor, reflects reduction in customer's base account ether:`
-![A screenshot depicts customer's ganache accounts tab following validated transaction send.](Resources/Images/3.%20Ganache%20After%20Successfully%20Sending%20Transaction.png)
+#### `3. Smart Contract Deposit #1 Validation:`
+![A screenshot depicts smart contract deposit #1 validation.](Resources/Images/Execution_Results/3.%20deposit_1_Contract%20Deposits.png)
 
-#### `4. Customer's Transactions Tab in Ganache Showing Validated Transaction Send to Fintech Independent Contractor, including to: and from: Ethereum addresses, transaction hash reflecting validation, along with ether transmitted (in wei) and gas used (in wei) to validate:`
-![A screenshot depicts customer's ganache transactions tab following validated transaction send.](Resources/Images/4.%20Ganache%20Transaction%20Log%20After%20Successfully%20Sending%20Transaction%20to%20Kendall.png)
+#### `4. Smart Contract Deposit #2 Validation:`
+![A screenshot depicts smart contract deposit #2 validation.](Resources/Images/Execution_Results/4.%20deposit_2_Contract%20Deposits.png)
 
-#### `5. Customer's Transactions Tab Detailed in Ganache Showing Validated Transaction Send to Fintech Independent Contractor, including to: and from: Ethereum addresses, transaction hash reflecting validation, gas price (in wei), account block mined, along with ether transmitted and gas used (in wei) to validate:`
-![A screenshot depicts customer's ganache transactions tab following validated transaction send.](Resources/Images/5.%20Ganache%20Transaction%20Log%20After%20Successfully%20Sending%20Transaction%20to%20Kendall%20(addtl%20detail).png)
+#### `5. Smart Contract Deposit #3 Validation:`
+![A screenshot depicts smart contract deposit #3 validation.](Resources/Images/Execution_Results/5.%20deposit_3_Contract%20Deposits.png)
+
+#### `6. Smart Contract Withdrawal to Account #1, Contract Balance, and Last to Withdraw Details Validation:`
+![A screenshot depicts smart contract withdrawal to account #1 validations.](Resources/Images/Execution_Results/6.%20withdraw_to_account1_with_last_to_withdraw_Contract%20Withdrawals.png)
+
+#### `7. Smart Contract Withdrawal to Account #2 Validation:`
+![A screenshot depicts smart contract withdrawal to account #1 validation.](Resources/Images/Execution_Results/7.%20withdraw_to_account2_Contract%20Withdrawals.png)
+
+#### `8. Smart Contract Withdrawal to Account #2 Contract Balance Validation:`
+![A screenshot depicts smart contract withdrawal to account #2 contract balance validation.](Resources/Images/Execution_Results/8.%20withdraw_to_account2_final_contract_balance_Contract%20Withdrawals.png)
+
+#### `9. Smart Contract Withdrawal to Account #2 Last to Withdraw Details Validation:`
+![A screenshot depicts smart contract withdrawal to account #2 contract balance validation](Resources/Images/Execution_Results/9.%20withdraw_to_account2_last_to_withdraw_details_Contract%20Withdrawals.png)
 
 ## Setup
 - GitHub Repository
-    - name: 'blockchain-wallets-challenge'
-    - location: uploaded to Bootcamp homework submission online portal and available publicly at:
-        - [GitHub Repository](https://github.com/boz-tcm/blockchain-wallets-challenge.git)
-- Python Standard Library Version 3.10.13
-- Python Libraries and Modules:
-    - crypto_wallet and generate_account, get_balance, send_transaction
-    - dataclasses and dataclass
-    - streamlit 1.27.2
-    - typing and Any, List
-    - web3 Version 5.17 and Web3 
-
-- Python File(s):
-    - [Project's main code file `'fintech_finder_krypto_jobs.py'`](fintech_finder_krypto_jobs.py)
-    - [Ethereum base support functions file `'crypto_wallet.py'`](crypto_wallet.py)    
+    - name: 'solidity-challenge'
+    - location: uploaded to Bootcamp homework submission online portal and available publicly at [GitHub Repository](https://github.com/boz-tcm/solidity-challenge.git).
+- Remix Web IDE:
+    - location: https://remix.ethereum.org/
+- Solidity File:
+    - [Project code file 'joint_savings.sol'](joint_savings.sol)  
 - Data:
-    - [Send Transaction Cost.xlsx](Resources/Data)
+    - n/a
 - Images:
-    - location: [README Screenshot Images](Resources/Images)
-    - location: [Streamlit Application Images](Images)
+    - location: [README Screenshots](Resources/Images/Execution_Results)
 - README:
     - location: [README.md](README.md)
 
 ## Usage
-The scripts are run in the project's Python files cited in [Setup](#setup), located within the project's GitHub repository root directory, and executed via Streamlit in a VS Code terminal using the command `'streamlit run fintech_finder_krypto_jobs.py'`.
+The Solidity file 'joint_savings.sol' cited in [Setup](#setup), and located within the project's GitHub repository root directory, was compiled and deployed in a Remix JavaScript VM environment 'Remix VM (London)' within Google Chrome.
 
 ## Project Status
 Project is: _complete
@@ -85,7 +88,7 @@ Room for improvement: _
 
 To do: _
 
-## Acknowledgements
+## Acknowledgments
 
 ## Contact
 Created by Todd C. Meier, tmeier@bozcompany.com - feel free to contact me!
