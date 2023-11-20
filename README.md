@@ -50,17 +50,17 @@
 #### `5. Smart Contract Deposit #3 Validation:`
 ![A screenshot depicts smart contract deposit #3 validation.](Resources/Images/Execution_Results/5.%20deposit_3_Contract%20Deposits.png)
 
-#### `6. Smart Contract Withdrawal to Account #1, Contract Balance, and Last to Withdraw Details Validation:`
-![A screenshot depicts smart contract withdrawal to account #1 validations.](Resources/Images/Execution_Results/6.%20withdraw_to_account1_with_last_to_withdraw_Contract%20Withdrawals.png)
+#### `6. Smart Contract Withdrawal Account #1, Contract Balance, and Last to Withdraw Details Validation:`
+![A screenshot depicts smart contract withdrawal account #1 validations.](Resources/Images/Execution_Results/6.%20withdraw_to_account1_with_last_to_withdraw_Contract%20Withdrawals.png)
 
-#### `7. Smart Contract Withdrawal to Account #2 Validation:`
-![A screenshot depicts smart contract withdrawal to account #1 validation.](Resources/Images/Execution_Results/7.%20withdraw_to_account2_Contract%20Withdrawals.png)
+#### `7. Smart Contract Withdrawal Account #2 Validation:`
+![A screenshot depicts smart contract withdrawal account #2 validation.](Resources/Images/Execution_Results/7.%20withdraw_to_account2_Contract%20Withdrawals.png)
 
-#### `8. Smart Contract Withdrawal to Account #2 Contract Balance Validation:`
-![A screenshot depicts smart contract withdrawal to account #2 contract balance validation.](Resources/Images/Execution_Results/8.%20withdraw_to_account2_final_contract_balance_Contract%20Withdrawals.png)
+#### `8. Smart Contract Withdrawal Account #2 Contract Balance Validation:`
+![A screenshot depicts smart contract withdrawal account #2 contract balance validation.](Resources/Images/Execution_Results/8.%20withdraw_to_account2_final_contract_balance_Contract%20Withdrawals.png)
 
-#### `9. Smart Contract Withdrawal to Account #2 Last to Withdraw Details Validation:`
-![A screenshot depicts smart contract withdrawal to account #2 contract balance validation](Resources/Images/Execution_Results/9.%20withdraw_to_account2_last_to_withdraw_details_Contract%20Withdrawals.png)
+#### `9. Smart Contract Withdrawal Account #2 Last to Withdraw Details Validation:`
+![A screenshot depicts smart contract withdrawal account #2 contract balance validation](Resources/Images/Execution_Results/9.%20withdraw_to_account2_last_to_withdraw_details_Contract%20Withdrawals.png)
 
 ## Setup
 - GitHub Repository
